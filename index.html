@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHIVANSH Opplex TV LIVE WEB</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <div class="container">
-        <h1>SHIVANSH Opplex TV LIVE WEB</h1>
-        <input type="text" id="search-input" placeholder="Search Channels...">
-        <select id="group-select">
-            <option value="all">All Groups</option>
-        </select>
-        <div id="channel-list"></div>
-        <div id="pagination-controls">
-            <button id="prev-page">Previous</button>
-            <span id="page-info"></span>
-            <button id="next-page">Next</button>
+        <header>
+            <h1>SHIVANSH Opplex TV LIVE WEB</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for a channel..." onkeyup="filterChannels()">
+                <button type="button" onclick="filterChannels()">Search</button>
+            </div>
+        </header>
+        <div id="channel-list" class="channel-grid">
+            <!-- Channel list items will be added here dynamically -->
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
 </html>
